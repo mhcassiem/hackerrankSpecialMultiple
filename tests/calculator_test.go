@@ -5,12 +5,28 @@ import (
 	"testing"
 )
 
-func TestCalculator(t *testing.T)  {
+func TestGetMultiple(t *testing.T)  {
 
-	result := pkg.Calculator
-
-	if result(1) != 1 {
-		t.Errorf("Expected %d, received %d", 1, result(1))
+	var expected = 9
+	var input = 1
+	if expected != returns9for1(input){
+		t.Errorf("Expected %d, received %d", expected, returns9for1(input))
 	}
 
+	expected = 90
+	input = 5
+	if expected != returns90for5(input){
+		t.Errorf("Expected %d, received %d", expected, returns9for1(input))
+	}
+
+}
+
+func returns9for1(input int) int {
+	result := pkg.GetMultiple(input)
+	return result
+}
+
+func returns90for5(input int) int {
+	result := pkg.GetMultiple(input)
+	return result
 }
