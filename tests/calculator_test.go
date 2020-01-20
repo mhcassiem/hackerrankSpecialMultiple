@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/mhcassiem/SpecialMultiple/pkg"
+	"github.com/mhcassiem/hackerrankSpecialMultiple/pkg"
 	"testing"
 )
 

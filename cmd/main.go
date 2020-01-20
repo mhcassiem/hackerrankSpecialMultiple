@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mhcassiem/SpecialMultiple/pkg"
+	"github.com/mhcassiem/hackerrankSpecialMultiple/pkg"
 )
 
 func main()  {
