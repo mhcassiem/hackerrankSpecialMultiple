@@ -7,13 +7,13 @@ import (
 	"os"
 )
 
-func main()  {
+func main() {
 	log := &logrus.Logger{
 		Out:   os.Stderr,
 		Level: logrus.DebugLevel,
 		Formatter: &prefixed.TextFormatter{
-			ForceColors:true,
-			FullTimestamp:false,
+			ForceColors:     true,
+			FullTimestamp:   false,
 			ForceFormatting: true,
 		},
 	}
