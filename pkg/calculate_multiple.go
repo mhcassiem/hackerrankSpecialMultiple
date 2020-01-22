@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func ConvertToNineBin(n int32) int64 {
+func convertToNineBin(n int32) int64 {
 	var temp int64
 	var tmp = n
 	var pos = 0
@@ -21,13 +21,13 @@ func GetMultiple(n int32) string {
 	var valid = false
 	var tmp int32 = 1
 	for !valid {
-		var rem = ConvertToNineBin(tmp) % int64(n)
+		var rem = convertToNineBin(tmp) % int64(n)
 		if rem != 0 {
 			tmp += 1
 		} else {
 			valid = true
 		}
 	}
-	result := strconv.FormatInt(ConvertToNineBin(tmp), 10)
+	result := strconv.FormatInt(convertToNineBin(tmp), 10)
 	return result
 }
